@@ -1,0 +1,10 @@
+li{
+    list-style-type: none;
+}
+img{
+    display: block;
+    width: 500px;
+    height: 400px; 
+    /* can giua : Block : chỉnh đc width */
+    margin: 20px auto;
+}

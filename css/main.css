@@ -1,0 +1,130 @@
+/* Bộ chọn tất cả */
+*{
+     /* reset css */
+     margin: 0;
+     padding:0;
+     list-style: none;
+     box-sizing: border-box;
+}
+html{
+    font-size:12px;
+}
+/* bộ chọn theo tên thẻ HTML - tagName */
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8rem;
+}
+span{
+    font-weight: bold;
+}
+/* bộ chọn theo quan hệ */
+/* tag1 tag2 - tát cả các thẻ tag2 nằm trong thẻ tag1 */
+ul li{
+    color: brown;
+}
+/* tag1>tag2 -  quan hệ cha con ruột */
+
+
+/* tag1,tag2,tag3,... -  liệt kê */
+h1,a,p{
+    /* color: blue !important; */
+}
+/*  tag1 + tag2 - Lấy duy nhất 1 phần tử tag2 đứng ngay sau tag1*/
+/*  tag1 ~ tag2 - Lấy tất phần tử tag2 đứng ngay sau tag1*/
+
+/* Bộ chọn theo định danh */
+/* Class - lớp - chọn tất cả các phần tử có chung class */
+div > div.box-item{
+ width: 10rem;
+ height: 10rem;   
+ background-color: brown;
+ border: 1px solid gray;
+ margin: 0.8px;
+ font-size: 100%;
+ border-radius: 50%;
+ /* căn giữa nội dung */
+ text-align: center;
+ line-height: 10rem;
+}
+section.box-item{
+
+}
+/* id - dịnh danh duy nhất - chọn một */
+#box{
+    background-color: cadetblue;
+    font-size: 4rem;
+    width: 50vw;
+    height: 50vh;
+    display: none;
+}
+/*  bộ chọn after/ before */
+p > span#text {
+    margin: 10px;
+}
+p > span#text::before{
+    content: "Hello";
+    color: blue;
+    margin-right: 10px;
+}
+p > span#text::after{
+    content: "2023";
+    color: blue;
+    margin-left : 10px;
+}
+
+ul :first-child{
+    color: brown;
+    font-size: 3rem;
+}
+ul :last-child{
+    color:blueviolet;
+    font-size: 0.8rem;
+}
+ul{
+/* background-image: url("https://tse3.mm.bing.net/th?id=OIP.ZnH_44G4iD0j-1sJLtNDugHaE8&pid=Api&P=0&h=180");
+background-repeat: no-repeat;
+background-size: cover;
+background-position:0px -150px; */
+background: url("https://tse3.mm.bing.net/th?id=OIP.ZnH_44G4iD0j-1sJLtNDugHaE8&pid=Api&P=0&h=180")  no-repeat center ;
+background-size: cover;
+}
+input:focus{
+    border: 2px solid red !important;
+    background-color: brown;
+}
+h1:hover{
+    background-color: white;
+    opacity: 0.5;
+}
+[aria-busy|=value]{
+
+}
+
+/* src = "bienxanh.png"
+^=bien_
+$=.png
+*=ine */
+
+ul:first-of-type{
+
+}
+ul:last-of-type{
+
+}
+ul :nth-child(3){
+    color: cadetblue;
+    font-size: 60px;
+}
+ul :nth-last-child(1){
+    font-size: 40px !important;
+}
+
+#box-model{
+    margin: 20px 40px;
+    padding: 20px ;
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    
+}
